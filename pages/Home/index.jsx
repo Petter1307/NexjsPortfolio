@@ -1,7 +1,12 @@
 // export { default as Home } from "./Home";
 import { useEffect } from 'react';
 // import { HElement, ArticleCard, ProjectCard } from '../../Components';
-import { ProjectCard, HElement, ArticleCard } from '../components';
+import {
+  ProjectCard,
+  HElement,
+  ArticleCard,
+  PageLayout,
+} from '../../components';
 
 const Home = () => {
   useEffect(() => {
@@ -10,8 +15,8 @@ const Home = () => {
   return (
     <>
       <HElement value="home" />
-      <div className="page_home">
-        <h1 className="page_title">HOME</h1>
+
+      <PageLayout title="Home" name="home">
         <div className="page_home-summary">
           <div className="page_home-summary-articles">
             <h1>Articles</h1>
@@ -24,15 +29,16 @@ const Home = () => {
           </div>
           <div className="page_home-summary-articles">
             <h1>Projects</h1>
-            <ProjectCard title="" link="" body="" />
-            <ProjectCard title="" link="" body="" />
-            <ProjectCard title="" link="" body="" />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
           </div>
         </div>
         <div className="page_home-description">
-          <h1>This is the home page from index</h1>
+          <h1>This is the home page inside pages asda sjdkajs kdj</h1>
         </div>
-      </div>
+      </PageLayout>
+
       <HElement value="/home" />
     </>
   );

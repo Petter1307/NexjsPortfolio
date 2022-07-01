@@ -22,6 +22,14 @@
       "@hooks/*": ["hooks/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types/*"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "types/*",
+    "components/SideBar/index.jsx",
+    "components/PageLayout/index.jsx",
+    "pages/Contact/index.jsx"
+  ],
   "exclude": ["node_modules"]
 }
